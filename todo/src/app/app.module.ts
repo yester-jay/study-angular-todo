@@ -15,7 +15,7 @@ import { TodoListItemComponent } from './todo-list/todo-list-item/todo-list-item
     TodoInputComponent,
     TodoListComponent,
     TodoInputTxtComponent,
-    TodoInputBtnComponent,
+    TodoInputBtnComponent, 
     TodoListItemComponent
   ],
   imports: [
