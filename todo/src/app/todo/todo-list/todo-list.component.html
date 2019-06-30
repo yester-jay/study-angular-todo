@@ -1,0 +1,16 @@
+<mat-list>
+  <h3 mat-subheader>To do</h3>
+  <mat-list-item *ngFor="let todo of todo">
+    <span mat-line>{{todo.title}}</span>
+    <span mar-line>{{todo.due | date}}</span>
+    <button mat-stroked-button color="accent">Modify</button>
+    <button mat-stroked-button color="warn">Delete</button>
+  </mat-list-item>
+  <h3 mat-subheader>Done</h3>
+  <mat-list-item *ngFor="let done of done">
+    <span mat-line>{{done.title}}</span>
+    <span mar-line>{{done.due | date}}</span>
+    <button mat-stroked-button color="accent">Modify</button>
+    <button mat-stroked-button color="warn">Delete</button>
+  </mat-list-item>
+</mat-list>

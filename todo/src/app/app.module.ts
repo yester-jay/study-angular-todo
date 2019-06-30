@@ -1,28 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoInputComponent } from './todo-input/todo-input.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { TodoInputTxtComponent } from './todo-input/todo-input-txt/todo-input-txt.component';
-import { TodoInputBtnComponent } from './todo-input/todo-input-btn/todo-input-btn.component';
-import { TodoListItemComponent } from './todo-list/todo-list-item/todo-list-item.component';
+import { TodoModule } from './todo/todo.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TodoInputComponent,
-    TodoListComponent,
-    TodoInputTxtComponent,
-    TodoInputBtnComponent, 
-    TodoListItemComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    TodoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class PizzaPartyAppModule { }
